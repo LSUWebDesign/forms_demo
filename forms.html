@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Forms</title>
+		<!--
+		<link href="assets/css/reset.css" rel="stylesheet" />
+		<link href="assets/css/styles.css" rel="stylesheet" />
+		-->
+	</head>
+	<body>
+		
+		<form action="http://www.example.com/review.php" method="get">
+			<fieldset>
+				<legend>Text Inputs:</legend>
+				<p>
+				<label for="name">Text: </label><input type="text" name="name" id="name" maxlength="100" placeholder="Name">
+				</p>				
+				<p>
+				<label for="password">Password: </label><input type="password" name="password" maxlength="100"><br>
+				</p>
+				<input type="hidden" name="sneaky" maxlength="100"><br>
+				<p>
+					<label for="comments">Comments:</label><br>
+					<textarea rows="4" cols="40" name="comments"  id="comments"></textarea>
+				</p>
+			</fieldset><br>
+			<fieldset>
+				<legend>Radio/Checkboxes:</legend>
+				
+				<p>
+					Radio Buttons:<br>
+					<label class="radioLabel"><input type="radio" name="radio" id="radio1" value="yes" checked> Yes</label>
+					<label class="radioLabel"><input type="radio" name="radio" id="radio2" value="no"> No</label>
+					<label class="radioLabel"><input type="radio" name="radio" id="radio3" value="maybe"> Maybe</label>
+				</p>
+				<p>
+					Check Boxes:<br>
+					<label class="checkLabel"><input type="checkbox" name="checkbox" id="checkbox1" value="yes" checked> Yes</label>
+					<label class="checkLabel"><input type="checkbox" name="checkbox" id="checkbox2" value="no"> No</label>
+					<label class="checkLabel"><input type="checkbox" name="checkbox" id="checkbox3" value="maybe"> Maybe</label>
+				</p>					
+				
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Select/Multiselect:</legend>
+				<p>
+					<label for="singleSelect">Single Select:</label>
+					<select name="singleSelect" id="singleSelect">
+						<option value="">Choose...</option>
+						<option value="option1">Option 1</option>
+						<option value="option2">Option 2</option>
+						<option value="option3">Option 3</option>
+						<option value="option4">Option 4</option>
+					</select>
+				</p>
+				
+				<p>
+					<label for="multiSelect">Multiple Select:</label>
+					<select name="multiSelect" id="multiSelect" multiple>
+						<option value="">Choose...</option>
+						<option value="option1">Option 1</option>
+						<option value="option2">Option 2</option>
+						<option value="option3">Option 3</option>
+						<option value="option4">Option 4</option>
+					</select>
+				</p>							
+				
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>File Upload:</legend>
+				<label for="myFileField">File Field</label> <input type="file" name="myFileField">
+			</fieldset>	
+			<br>
+			<fieldset>
+				<legend>HTML 5 Specific:</legend>
+				<p>
+					<label for="myDateField">Date Field:</label> <input type="date" name="myDateField">
+				</p>
+				
+				<p>
+					<label for="myNumberField">Number Field:</label> <input type="number" name="myNumberField">
+				</p>
+				
+				<p>
+					<label for="email">Email: </label><input type="email" name="email" maxlength="100">
+				</p>
+				
+				<p>
+					<label for="myURLField">URL: </label> <input type="url" name="myURLField">
+				</p>
+				
+			</fieldset>	
+			<br>
+			<input type="submit" value="Submit review"><br>
+			<button type="submit">Submit Review</button><br>
+			<input type="image" src="assets/images/subscribe.jpg" width="100" height="20">
+		</form>
+			
+</body>
+</html>
